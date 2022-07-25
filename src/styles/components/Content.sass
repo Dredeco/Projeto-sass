@@ -1,0 +1,58 @@
+@use '../variables'
+@use '../mixins'
+
+.content
+    position: absolute
+    left: 0
+    top: 0
+    background-image: url('./../../assets/images/bg1.jpg')
+    background-size: cover
+    background-position: center
+    width: 100%
+    height: 85vh
+    z-index: 1
+    display: flex
+    align-items: center
+    justify-items: center
+
+.layer
+    position: absolute
+    background-color: black
+    width: 100%
+    height: 85vh
+    z-index: 0
+    opacity: 40%
+
+.content-box
+    display: flex
+    flex-direction: column
+    position: relative
+    color: #fff
+    left: 50%
+    transform: translate(-50%, 0)
+    width: 80%
+    max-width: 1280px
+    z-index: 1
+
+    h1
+        display: flex
+        padding-bottom: 1.2rem
+        font-size: 2.5rem
+
+        p
+            color: variables.$primary-blue
+            margin-left: 0.6rem
+    
+    span
+        width: 60%
+        text-align: justify
+
+    button
+        @include mixins.btn
+        cursor: pointer
+        transition: 1s
+
+        &:hover
+            background-color: variables.$secondary-blue
+            color: variables.$primary-blue
+        

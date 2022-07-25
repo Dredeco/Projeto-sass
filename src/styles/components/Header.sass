@@ -1,0 +1,52 @@
+@use '../variables'
+
+.header
+    position: absolute
+    width: 100%
+    max-width: 1280px
+    display: flex
+    top: 0px
+    left: 50%
+    transform: translate(-50%, 0)
+    padding: 0.6% 0
+    border-bottom: solid 1px #fff
+    z-index: 10
+
+.logo
+    width: 100%
+    display: flex
+    font-size: 1.5rem
+    font-weight: bold
+    text-decoration: none
+    align-items: flex-end
+
+    p
+        color: variables.$primary-blue
+        padding-left: 0.5rem
+        padding-right: 0.5rem
+
+.desktop
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: end
+    text-align: right
+
+    i
+        font-size: 1.5rem
+        padding-left: 1rem
+    
+    ul
+        display: flex
+        padding-top: 1rem
+
+        li
+            padding-left: 1.5rem
+            list-style: none
+
+            a
+                text-decoration: none
+                font-size: 1.2em
+
+.mobile
+    display: none
