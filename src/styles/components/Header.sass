@@ -1,14 +1,10 @@
 @use '../variables'
 
 .header
-    position: absolute
     width: 100%
     max-width: 1280px
     display: flex
-    top: 0px
-    left: 50%
-    transform: translate(-50%, 0)
-    padding: 0.6% 0
+    padding: 0.6% 1%
     border-bottom: solid 1px #fff
     z-index: 10
 
@@ -19,6 +15,10 @@
     font-weight: bold
     text-decoration: none
     align-items: flex-end
+
+    a
+        display: flex
+        text-decoration: none
 
     p
         color: variables.$primary-blue
@@ -35,6 +35,11 @@
     i
         font-size: 1.5rem
         padding-left: 1rem
+        transition: 1s
+
+        &:hover
+            color: variables.$secondary-blue
+            font-weight: bold
     
     ul
         display: flex
@@ -47,6 +52,11 @@
             a
                 text-decoration: none
                 font-size: 1.2em
+                transition: 1s
+
+                &:hover
+                    color: variables.$secondary-blue
+                    font-weight: bold
 
 .mobile
     display: none

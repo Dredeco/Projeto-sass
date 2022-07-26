@@ -9,7 +9,7 @@
     background-size: cover
     background-position: center
     width: 100%
-    height: 85vh
+    height: 50rem
     z-index: 1
     display: flex
     align-items: center
@@ -19,9 +19,9 @@
     position: absolute
     background-color: black
     width: 100%
-    height: 85vh
+    height: 50rem
     z-index: 0
-    opacity: 40%
+    opacity: 60%
 
 .content-box
     display: flex
@@ -36,6 +36,7 @@
 
     h1
         display: flex
+        flex-wrap: wrap
         padding-bottom: 1.2rem
         font-size: 2.5rem
 
@@ -47,12 +48,22 @@
         width: 60%
         text-align: justify
 
-    button
+    a
         @include mixins.btn
+        display: flex
+        justify-content: center
+        align-items: center
         cursor: pointer
         transition: 1s
+        margin-top: 2rem
+        text-decoration: none
 
         &:hover
             background-color: variables.$secondary-blue
             color: variables.$primary-blue
         
+
+@media screen and (max-width: 1280px)
+    .content-box
+        span
+            width: 100%

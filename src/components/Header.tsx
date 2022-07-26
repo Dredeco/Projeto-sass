@@ -4,9 +4,9 @@ const Header = () => {
   return (
     <div className="header">
 
-      <a href="/" className="logo">
-        <p>&lt;</p> André Fernandes <p>/&gt;</p>
-      </a>
+      <div className="logo">
+        <a href='/'><p>&lt;</p> André Fernandes <p>/&gt;</p></a>
+      </div>
 
       <nav className="desktop">
         
@@ -16,9 +16,9 @@ const Header = () => {
       </div>
 
       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Sobre</a></li>
-        <li><a href="">Contato</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="#products">Sobre</a></li>
+        <li><a href="#team">Contato</a></li>
       </ul>
       </nav>
 
