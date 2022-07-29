@@ -60,3 +60,60 @@
 
 .mobile
     display: none
+
+
+@media screen and (max-width: 768px)
+    .header
+        position: fixed
+        background: #333
+
+    .desktop
+        display: none
+
+    .logo
+        width: 50rem
+        padding: 1rem 0
+
+    .mobile
+        display: inline
+        width: 100%
+
+        i
+            width: 100%
+            display: flex
+            justify-content: end
+            font-size: 2.4rem
+            padding: 1rem 1rem
+
+        ul
+            width: 100%
+            background: variables.$primary-blue
+            display: flex
+            flex-direction: column
+            position: absolute
+            left: 0
+            list-style: none
+
+            li
+                width: 100%
+                text-align: center
+                border-bottom: 1px solid variables.$light-gray
+
+                a
+                    display: block
+                    background: variables.$primary-blue
+                    width: 100%
+                    text-decoration: none
+                    padding: 1rem 0
+                    transition: 1s
+
+                    &:hover
+                        background: variables.$secondary-blue
+                        color: variables.$primary-blue
+                        font-weight: bold
+
+    .menu-open
+        margin-top: 5px
+
+    .menu-closed
+        top: -15rem

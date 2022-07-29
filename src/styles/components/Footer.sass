@@ -21,3 +21,24 @@
 
         a
             text-decoration: none
+
+@media screen and (max-width: 900px)
+    .footer-wrap
+        flex-direction: column-reverse
+        text-align: center
+
+    .footer-menu
+        li
+            width: 100%
+            padding: 0.5rem 0.5rem
+
+            a
+                &:hover
+                    font-weight: bold
+                    color: variables.$secondary-blue
+                    transition: 1s all
+
+    .footer-wrap
+        p
+            border-top: 1px solid variables.$secondary-blue
+            padding: 0.5rem 0

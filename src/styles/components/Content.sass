@@ -2,9 +2,9 @@
 @use '../mixins'
 
 .content
-    position: absolute
+    position: relative
     left: 0
-    top: 0
+    top: -93px
     background-image: url('./../../assets/images/bg1.jpg')
     background-size: cover
     background-position: center
@@ -67,3 +67,9 @@
     .content-box
         span
             width: 100%
+
+@media screen and (max-width: 768px)
+    .content
+        margin-top: 4rem
+        min-height: 900px
+        position: relative
