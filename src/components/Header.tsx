@@ -10,14 +10,14 @@ const Header = () => {
     <div className="header">
 
       <div className="logo">
-        <a href='/'><p>&lt;</p> André Fernandes <p>/&gt;</p></a>
+        <a href='#home'><p>&lt;</p> André Fernandes <p>/&gt;</p></a>
       </div>
 
       <nav className="desktop">
         
         <div id="icons-social">
-          <a href="https://facebook.com"><i className="fa fa-facebook" aria-hidden="true"></i></a>
-          <a href="https://instagram.com"><i className="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/dredeco/"><i className="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://instagram.com/dredeco"><i className="fa fa-instagram" aria-hidden="true"></i></a>
         </div>
 
         <ul>
