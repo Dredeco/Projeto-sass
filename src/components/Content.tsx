@@ -2,7 +2,7 @@ import '../styles/components/Content.sass'
 
 const Content = () => {
   return (
-    <div className='content'>
+    <div id='home' className='content'>
         <div className="layer"></div>
         <div className='content-box'>
 

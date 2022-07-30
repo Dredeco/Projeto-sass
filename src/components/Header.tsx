@@ -33,7 +33,7 @@ const Header = () => {
       <i onClick={()=>setOpen(!open)} className={open ? "fa-solid fa fa-close" : "fa-solid fa fa-bars"}></i>
 
         <ul className={`${open ? 'menu-open' : 'menu-closed' }`}>
-        <li><a href="/">Home</a></li>
+        <li><a href="#home">Home</a></li>
           <li><a href="#products">Sobre</a></li>
           <li><a href="#team">Contato</a></li>
         </ul>	

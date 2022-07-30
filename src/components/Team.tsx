@@ -4,7 +4,7 @@ import avatarImg from '../assets/images/avatar.png'
 const Team = () => {
   return (
     <div id='team' className='team'>
-        <h1 className=''>Conheça nossos time!</h1>
+        <h1 className=''>Conheça nosso time!</h1>
 
         <div className='team-wrapper'>
 
